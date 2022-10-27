@@ -1,0 +1,14 @@
+name: Wake up bot
+
+on:
+  schedule:
+    - cron: "*/14 * * * *"
+
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+    - name: curl
+      uses: wei/curl@master
+      with:
+        args: https://DKOKbotRe.himagenjithiku.repl.co
