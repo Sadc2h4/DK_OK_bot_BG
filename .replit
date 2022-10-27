@@ -1,4 +1,5 @@
-entrypoint = "index.js"
+run = "node DK_OK_bot.js"
+entrypoint = "DK_OK_bot.js"
 
 hidden = [".config"]
 
