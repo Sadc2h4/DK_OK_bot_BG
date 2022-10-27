@@ -21,7 +21,7 @@ const { createAudioResource } = require('@discordjs/voice');
 const { entersState } = require('@discordjs/voice');
 const { AudioPlayerStatus } = require('@discordjs/voice');
 const { prefix, channel, useChannelFilter } = require('./config.json');
-const ytdl = require('ytdl-core');
+const ytdl = require('youtube-dl');
 const queue = new Map(); // Song queue
 const subscriptions = new Map(); // Audio subscriptions
 
