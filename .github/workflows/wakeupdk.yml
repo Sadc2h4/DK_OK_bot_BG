@@ -1,6 +1,7 @@
 name: Wake up bot
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "*/14 * * * *"
 
@@ -9,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: curl
+      continue-on-error: true
       uses: wei/curl@master
       with:
         args: https://DKOKbotRe.himagenjithiku.repl.co
