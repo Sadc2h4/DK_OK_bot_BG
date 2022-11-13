@@ -2,8 +2,8 @@ name: Wake up bot
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "*/14 * * * *"
+  # schedule:
+  #   - cron: "*/14 * * * *"
 
 jobs:
   curl:
